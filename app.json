@@ -17,9 +17,7 @@
       "width": 100,
       "height": 400
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "y"
@@ -32,8 +30,7 @@
     },
     "scheme": "mycoolredirect",
     "extra": {
-      "eas": {
-      }
+      "eas": {}
     }
   }
 }

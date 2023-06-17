@@ -23,7 +23,6 @@ import { useFocusEffect } from "@react-navigation/native";
 import { SendEveryDayPushNotification } from "../../constants/Functions/SendEveryDayPushNotification";
 import * as Device from "expo-device";
 import * as Notifications from "expo-notifications";
-import {AsyncStorage} from 'react-native';
 
 export const MyGoals = ({ navigation }) => {
   const [Loading, setLoading] = useState(false);
@@ -116,19 +115,6 @@ export const MyGoals = ({ navigation }) => {
       console.log(data);
     });
   }, [expoPushToken]);
-
-  // storeData = async () => {
-  //   try {
-  //     await AsyncStorage.setItem(
-  //       'everyDayNotificationMessage',
-  //       notificationMessage,
-  //     );
-  //   } catch (error) {
-  //     console.log(error, "У нас проблемы")
-  //   }
-  // };
-  // storeData()
-  
 
   // Notifications code
   Notifications.setNotificationHandler({
