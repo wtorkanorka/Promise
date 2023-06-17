@@ -1,9 +1,5 @@
 {
   "expo": {
-    "androidStatusBar": {
-      "backgroundColor": "rgba(0,0,0,0)",
-      "barStyle": "dark-content"
-    },
     "name": "Promise",
     "slug": "promiseApp",
     "version": "1.0.0",
@@ -22,6 +18,10 @@
       "supportsTablet": true,
       "bundleIdentifier": "y"
     },
+    "androidStatusBar": {
+      "backgroundColor": "#00000000",
+      "barStyle": "dark-content"
+    },
     "android": {
       "package": "com.promise.promiseApp"
     },
@@ -30,7 +30,9 @@
     },
     "scheme": "mycoolredirect",
     "extra": {
-      "eas": {}
+      "eas": {
+        "projectId": "a880852b-a6fc-4f72-81b4-a290a3f71e92"
+      }
     }
   }
 }
